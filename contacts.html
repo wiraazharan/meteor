@@ -1,7 +1,10 @@
 <template name="contacts">
 <div class="panel panel-default">
+
   <div class="panel-heading">Contacts</div>
+
   <table class="table table-striped">
+
     <thead>
     <tr>
       <th>Name</th>
@@ -11,12 +14,18 @@
     </tr>
     </thead>
     <tbody>
+
     {{#each contacts}}
       {{> contact}}
     {{/each}}
     </tbody>
   </table>
+
+
 </div>
+
+<!-- <th><button type="button" class="btn btn-danger delete">Delete</button></th>  -->
+
 </template>
 
 

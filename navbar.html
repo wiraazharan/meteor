@@ -1,4 +1,5 @@
 <template name="navbar">
+  
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -11,6 +12,8 @@
       <a class="navbar-brand" href="#">Contact Book</a>
     </div>
 
+
+
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Contacts</a></li>
@@ -20,6 +23,34 @@
         <li><a href="#">Login</a></li>
       </ul>
     </div>
+
+
+    <div class="panel-heading">
+  <div class="row text-right">
+    <div class="col-md-6">
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control searchbox" name="query" placeholder="Search">
+        </div>
+      </form>
+    </div>
+    <div class="col-md-6 text-right">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newContactModal">
+        Add New Contact
+      </button>
+      <button type="button" class="btn btn-danger delete">Delete</button>
+    </div>
   </div>
+</div>
+
+
+
+    
+
+  </div>
+
+
 </nav>
+
+
 </template>
